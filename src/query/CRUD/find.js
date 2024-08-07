@@ -11,7 +11,7 @@ const findOne = async () => {
     
 }
 const findSome = async () => {
-    const users=await database.collection('users').find({age:40}).toArray()
+    const users=await database.collection('users').find({age:30}).toArray()
     console.log({users,length:users.length});
     
 }

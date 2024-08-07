@@ -3,7 +3,8 @@ const { findAll, findOne, findSome } = require('./CRUD/find')
 const { updateOne, updateMany, replaceOne } = require('./CRUD/update')
 const { ComparisonOperators } = require('./ComparisonOperators/operators')
 const { logicalOperators } = require('./LogicalOperators/logicalOperators')
-const {ElementOperators}=require('./ElementOperators/ElementOperators')
+const { ElementOperators } = require('./ElementOperators/ElementOperators')
+const {EvaluationOperators}=require('./EvaluationOperators/EvaluationOperators')
 const queryIndex = () => {
     console.log("**********queryIndex JS**********");
     // insertOneItem()
@@ -21,6 +22,8 @@ const queryIndex = () => {
 
     // logicalOperators()
 
-    ElementOperators()
+    // ElementOperators()
+
+    EvaluationOperators()
 }
 module.exports = { queryIndex }
