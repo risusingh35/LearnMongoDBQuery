@@ -1,0 +1,22 @@
+Here’s a more comprehensive guide on using MongoDB types:
+
+String: 2
+Number (Double): 1
+Object: 3
+Array: 4
+Binary Data: 5
+Undefined: 6
+ObjectId: 7
+Boolean: 8
+Date: 9
+Null: 10
+Regular Expression: 11
+JavaScript Code: 13
+Symbol: 14
+JavaScript Code with Scope: 15
+32-bit Integer: 16
+Timestamp: 17
+64-bit Integer: 18
+Decimal128: 19
+Min Key: -1
+Max Key: 127

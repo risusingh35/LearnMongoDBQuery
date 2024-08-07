@@ -1,7 +1,8 @@
+const { ObjectId } = require('mongodb');
 const { database } = require('../../../db/mongodbConnect')
 userCollection = database.collection('users')
 const updateOne = async () => {
-    const result = await userCollection.updateOne({ age: 40 }, { $set: { email: 'rksp@gmail.com' } })
+    const result = await userCollection.updateOne({ _id: new ObjectId('66b32b399c6efaa313a09544') }, { $set: { isActive: false } })
     console.log({ result });
 }
 const updateMany = async () => {

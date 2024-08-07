@@ -1,3 +1,4 @@
+const { ObjectId } = require('mongodb');
 const {database}=require('../../../db/mongodbConnect')
 const findAll = async () => {
     const users=await database.collection('users').find({}).toArray()
@@ -5,7 +6,7 @@ const findAll = async () => {
     
 }
 const findOne = async () => {
-    const users=await database.collection('users').find({}).toArray()
+    const users=await database.collection('users').find({_id:new ObjectId('66b32b399c6efaa313a09537')}).toArray()
     console.log({users,length:users.length});
     
 }
