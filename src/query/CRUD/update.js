@@ -5,7 +5,7 @@ const updateOne = async () => {
     console.log({ result });
 }
 const updateMany = async () => {
-    const result = await userCollection.updateMany({ age: 40 }, { $set: { email: 'rksp@gmail.com' } })
+    const result = await userCollection.updateMany({ age: 40 }, { $set: { phone: 'rksp@gmail.com' } })
     console.log({ result });
 
 }

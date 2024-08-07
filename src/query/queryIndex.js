@@ -1,7 +1,8 @@
 const { insertOneItem, insertManyItem } = require('./CRUD/create')
-const { findAll ,findOne ,findSome} = require('./CRUD/find')
-const {updateOne,updateMany,replaceOne}=require('./CRUD/update')
-const {optExample}=require('./ComparisonOperators/operators')
+const { findAll, findOne, findSome } = require('./CRUD/find')
+const { updateOne, updateMany, replaceOne } = require('./CRUD/update')
+const { ComparisonOperators } = require('./ComparisonOperators/operators')
+const { logicalOperators } = require('./LogicalOperators/logicalOperators')
 const queryIndex = () => {
     console.log("**********queryIndex JS**********");
     // insertOneItem()
@@ -10,10 +11,12 @@ const queryIndex = () => {
     // findAll()
     // findOne()
     // findSome()
-    
+
     // replaceOne()
     // updateMany()
 
-    optExample()
+    // ComparisonOperators()
+
+    // logicalOperators()
 }
 module.exports = { queryIndex }
