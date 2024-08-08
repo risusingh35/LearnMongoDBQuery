@@ -11,8 +11,8 @@ const findOne = async () => {
     
 }
 const findSome = async () => {
-    const users=await database.collection('users').find({age:30}).toArray()
-    console.log({users,length:users.length});
+    const users=await database.collection('users').find({age:101}).toArray()
+    console.log(users,'length',users.length);
     
 }
 module.exports = { findAll,findOne ,findSome}
