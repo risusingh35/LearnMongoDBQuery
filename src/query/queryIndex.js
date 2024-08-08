@@ -6,6 +6,7 @@ const { logicalOperators } = require('./LogicalOperators/logicalOperators')
 const { ElementOperators } = require('./ElementOperators/ElementOperators')
 const { EvaluationOperators } = require('./EvaluationOperators/EvaluationOperators')
 const { arrayOperators } = require('./Array Operators/arrayOperators')
+const { matchGroupProject } = require('./AggregationPipelineStages/aggregation')
 
 const queryIndex = () => {
     console.log("**********queryIndex JS**********");
@@ -28,6 +29,8 @@ const queryIndex = () => {
 
     // EvaluationOperators()
 
-    arrayOperators()
+    // arrayOperators()
+
+    matchGroupProject()
 }
 module.exports = { queryIndex }
