@@ -24,6 +24,6 @@ const queryIndex = () => {
 
     // ElementOperators()
 
-    EvaluationOperators()
+    // EvaluationOperators()
 }
 module.exports = { queryIndex }

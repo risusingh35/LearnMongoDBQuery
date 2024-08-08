@@ -4,6 +4,7 @@ dotenv.config();
 const startApp = require('./src/app')
 const PORT = process.env.PORT || 4030
 const { mdbClient } = require('./db/mongodbConnect')
+
 const StartServer = async () => {
     try {
         const app = startApp()

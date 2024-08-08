@@ -1,0 +1,93 @@
+Question 1-------------------
+//ensure that the console logs appear in the sequence 1, 2, 3, 4,
+function sloppyTime() {
+  setTimeout(()=> console.log(1),2000);
+  console.log(2);
+  setTimeout(()=> console.log(3),0);
+  console.log(4);
+};
+----------------------Question end Here-----------------------------------
+const delay = (ms) => {
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms)
+    })
+}
+async function sloppyTime() {
+    await delay(2000)
+    console.log(1)
+    console.log(2);
+    await delay(0)
+    console.log(3)
+    console.log(4);
+};
+sloppyTime()
+Question 2-------------------
+//what will log or Error
+function func1() {
+  setTimeout(()=>{
+    console.log(x);
+    console.log(y);
+  },3000);
+
+  var x = 2;
+  let y = 12;
+}
+----------------------Question end Here-----------------------------------
+function func1() {
+  setTimeout(()=>{
+    console.log(x);// 2
+    console.log(y);// 12
+  },3000);
+
+  var x = 2;
+  let y = 12;
+}
+Question 3-------------------
+//what will log and why
+for (var i = 1; i < 4; i++) {
+    setTimeout(() => {
+        console.log(i)
+    }, 3000)
+}
+Question 4-------------------
+//what will log and why
+for (let i = 1; i < 4; i++) {
+    setTimeout(() => {
+        console.log(i)
+    }, 3000)
+}
+----------------------Question end Here-----------------------------------
+Q3=>4,4,4
+Q4=>1,2,3
+Question 5-------------------
+//Logical Execution Order:
+FROM - JOIN - ON - WHERE - HAVING - GROUP BY - LIMIT - SELECT - ORDER BY
+----------------------Question end Here-----------------------------------
+FROM
+JOIN
+ON
+WHERE
+GROUP BY
+HAVING
+SELECT
+ORDER BY
+LIMIT
+----------------------------
+SELECT 
+    e.name AS employee_name, 
+    d.name AS department_name, 
+    e.salary 
+FROM 
+    employees e
+JOIN 
+    departments d ON e.department_id = d.id
+WHERE 
+    e.salary > 50000
+GROUP BY 
+    d.name
+HAVING 
+    AVG(e.salary) > 60000
+ORDER BY 
+    AVG(e.salary) DESC
+LIMIT 10;
+-----------------------------------------
